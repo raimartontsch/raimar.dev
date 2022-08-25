@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import Nav from './Components/Nav'
+import GlobalStyle from './GlobalStyles'
 
 function App() {
 
   return (
     <div className="App">
+      <GlobalStyle/>
       <button>De/En</button>
       <main>
       <h1>Welcome</h1>
