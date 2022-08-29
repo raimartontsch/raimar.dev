@@ -1,8 +1,8 @@
 import create from 'zustand';
 
 const useStore = create(set => ({
-	modaleState: null,
-	setModalState: () => set({ modaleState }),
+	modalState: false,
+	setModalState: () => set({ modaleState: true }),
 	setAboutMe: true,
 	hideAboutMe: () => {
 		set({ setAboutMe: false });

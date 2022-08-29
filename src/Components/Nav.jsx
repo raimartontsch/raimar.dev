@@ -3,6 +3,8 @@ import CV from "./CV";
 import Projects from "./Projects";
 import Social from "./Social";
 import useStore from './Store';
+import { NavContainer } from "./UI/NavContainer.styled";
+import { NavH2 } from "./UI/NavH2.styled";
 
 export default function Nav() {
 	
@@ -35,21 +37,21 @@ export default function Nav() {
 				const handleSocial = () => {
 					if (!setSocial) {showSocial()} else {hideSocial()}}
 	return (
-		<div>
+		
+			<NavContainer>
 
-			<h2 onClick={handleAboutMe}>About me</h2>
-			{setAboutMe ? null: <AboutMe/>}
+			<NavH2 onClick={handleAboutMe}>About me</NavH2>
+			{setAboutMe ? null : <AboutMe/>}
 
-			<h2 onClick={handleCV}>CV</h2>
-			{setCV ? null: <CV/>}			
+			<NavH2 onClick={handleCV}>CV</NavH2>
+			{setCV ? null : <CV/>}			
 			
-			<h2 onClick={handleProjects}>Projekte</h2>
-			{setProjects ? null: <Projects/>}
+			<NavH2 onClick={handleProjects}>Projekte</NavH2>
+			{setProjects ? null : <Projects/>}
 
-			<h2 onClick={handleSocial}>Social</h2>
-			{setSocial? null: <Social/>}
+			<NavH2 onClick={handleSocial}>Social</NavH2>
+			{setSocial? null : <Social/>}
+			</NavContainer>
 
-			
-		</div>
 	);
 }
