@@ -1,4 +1,4 @@
-import { AboutMeText } from "./UI/AboutMeText.styled";
+import { AboutMeText } from './UI/AboutMeText.styled';
 
 export default function AboutMe() {
 	return (

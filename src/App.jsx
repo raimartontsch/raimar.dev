@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <GlobalStyle/>
       <main>
-        <DeEnButton/> 
       <SideMenu/>
       <BodyContainer>
       <h1>Welcome</h1>

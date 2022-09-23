@@ -31,6 +31,13 @@ const useStore = create(set => ({
 	showSocial: () => {
 		set({ setSocial: true });
 	},
+	setText: true,
+	hideText: () => {
+		set({ setText: false });
+	},
+	showText: () => {
+		set({ setText: true });
+	},
 }));
 
 export default useStore;
