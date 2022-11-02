@@ -1,25 +1,45 @@
-import SideMenu from './Components/SideMenu'
-import Nav from './Components/Nav'
-import { BodyContainer } from './Components/UI/BodyContainer.styled'
-import GlobalStyle from './GlobalStyles'
-import DeEnButton from './Components/DeEnButton'
+import SideMenu from './Components/SideMenu';
+import Nav from './Components/Nav';
+import { BodyContainer } from './Components/UI/BodyContainer.styled';
+import GlobalStyle from './GlobalStyles';
+import AboutMe from './Components/AboutMe';
+import CV from './Components/CV';
+import Projects from './Components/Projects';
+import Social from './Components/Social';
+import { SiteContainer } from './Components/UI/SiteContainer.styled';
+import Welcome from './Components/Welcome';
 
 function App() {
-
-  return (
-    <div className="App">
-      <GlobalStyle/>
-      <main>
-        <DeEnButton/> 
-      <SideMenu/>
-      <BodyContainer>
-      <h1>Welcome</h1>
-      <Nav/>
-      </BodyContainer>
-      </main>
-      
-    </div>
-  )
+	return (
+		<div className="App">
+			<GlobalStyle />
+			<main>
+				<SideMenu />
+				<BodyContainer>
+					<Nav />
+					<SiteContainer>
+						<Welcome />
+					</SiteContainer>
+					<SiteContainer>
+						<h2>About Me</h2>
+						<AboutMe />
+					</SiteContainer>
+					<SiteContainer>
+						<h2>Projects</h2>
+						<Projects />
+					</SiteContainer>
+					<SiteContainer>
+						<h2>Social</h2>
+						<Social />
+					</SiteContainer>
+					<SiteContainer>
+						<h2>CV</h2>
+						<CV />
+					</SiteContainer>
+				</BodyContainer>
+			</main>
+		</div>
+	);
 }
 
-export default App
+export default App;

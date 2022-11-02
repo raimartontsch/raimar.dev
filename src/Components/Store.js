@@ -3,33 +3,33 @@ import create from 'zustand';
 const useStore = create(set => ({
 	modalState: false,
 	setModalState: () => set({ modaleState: true }),
-	setAboutMe: true,
+	setAboutMe: false,
 	hideAboutMe: () => {
-		set({ setAboutMe: false });
-	},
-	showAboutMe: () => {
 		set({ setAboutMe: true });
 	},
-	setCV: true,
-	hideCV: () => {
-		set({ setCV: false });
+	showAboutMe: () => {
+		set({ setAboutMe: false });
 	},
-	showCV: () => {
+	setCV: false,
+	hideCV: () => {
 		set({ setCV: true });
 	},
-	setProjects: true,
-	hideProjects: () => {
-		set({ setProjects: false });
+	showCV: () => {
+		set({ setCV: false });
 	},
-	showProjects: () => {
+	setProjects: false,
+	hideProjects: () => {
 		set({ setProjects: true });
 	},
-	setSocial: true,
+	showProjects: () => {
+		set({ setProjects: false });
+	},
+	setSocial: false,
 	hideSocial: () => {
-		set({ setSocial: false });
+		set({ setSocial: true });
 	},
 	showSocial: () => {
-		set({ setSocial: true });
+		set({ setSocial: false });
 	},
 }));
 
