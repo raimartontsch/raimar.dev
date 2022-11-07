@@ -18,19 +18,15 @@ function App() {
 				<BodyContainer>
 					<Nav />
 					<SiteContainer>
-						<Welcome />
+						<h2 id="Start">Welcome </h2>{' '}
 					</SiteContainer>
 					<SiteContainer>
-						<h2>About Me</h2>
+						<h2 id="AboutMe">About Me</h2>
 						<AboutMe />
 					</SiteContainer>
 					<SiteContainer>
-						<h2>Projects</h2>
+						<h2 id="Projects">Projects</h2>
 						<Projects />
-					</SiteContainer>
-					<SiteContainer>
-						<h2>Social</h2>
-						<Social />
 					</SiteContainer>
 					<SiteContainer>
 						<h2>CV</h2>
