@@ -1,4 +1,3 @@
-import SideMenu from './Components/SideMenu';
 import Nav from './Components/Nav';
 import { BodyContainer } from './Components/UI/BodyContainer.styled';
 import GlobalStyle from './GlobalStyles';
@@ -8,17 +7,17 @@ import Projects from './Components/Projects';
 import Social from './Components/Social';
 import { SiteContainer } from './Components/UI/SiteContainer.styled';
 import Welcome from './Components/Welcome';
+import Contact from './Components/Contact';
 
 function App() {
 	return (
 		<div className="App">
 			<GlobalStyle />
 			<main>
-				<SideMenu />
 				<BodyContainer>
 					<Nav />
 					<SiteContainer>
-						<h2 id="Start">Welcome </h2>{' '}
+						<Welcome id="Start" />
 					</SiteContainer>
 					<SiteContainer>
 						<h2 id="AboutMe">About Me</h2>
@@ -31,6 +30,12 @@ function App() {
 					<SiteContainer>
 						<h2>CV</h2>
 						<CV />
+					</SiteContainer>
+					<SiteContainer>
+						<h2>Social Media</h2>
+						<Social />
+						<h2>Contact</h2>
+						<Contact />
 					</SiteContainer>
 				</BodyContainer>
 			</main>

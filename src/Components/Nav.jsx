@@ -51,6 +51,7 @@ export default function Nav() {
 							<NavH2>Projekte</NavH2>
 						</a>
 						<NavH2>CV</NavH2>
+						<p>Impressum</p>
 					</NavBar>
 				</NavContainer>
 			)}
