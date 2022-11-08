@@ -19,6 +19,7 @@ export const NavContainer = styled.div`
 	height: 75vh;
 	width: 15vw;
 
-	@media screen and (max-width: 412px) {
-		width: 50vw;
+	@media screen and (max-width: 720px) {
+		width: 35vw;
+	}
 `;

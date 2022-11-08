@@ -9,7 +9,7 @@ export const SiteContainer = styled.div`
 	border-bottom: solid 2px;
 	border-color: silver;
 
-	@media screen and (max-width: 412px) {
+	@media screen and (max-width: 720px) {
 		width: 60vw;
 	}
 `;

@@ -5,9 +5,8 @@ export const SideBar = styled.div`
 	flex-direction: column;
 	position: fixed;
 
-	left: 1vw;
+	left: 0.25em;
 	bottom: 20vh;
-	align-items: center;
-	background-color: transparent;
+	background-color: yellow;
 	color: silver;
 `;
