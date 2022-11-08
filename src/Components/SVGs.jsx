@@ -12,8 +12,10 @@ const SvgObject = {
 
 export default function TheSVG({ variant, size = '48px', color = 'currentColor' }) {
 	return (
-		<svg style={{ width: size, height: size }} viewBox="0 0 48 48">
-			<path fill={color} d={SvgObject[variant]} />
-		</svg>
+		<div>
+			<svg style={{ width: size, height: size }} viewBox="0 0 48 48">
+				<path fill={color} d={SvgObject[variant]} />
+			</svg>
+		</div>
 	);
 }
