@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
     color-scheme: light dark;
     background-color: #7d8e87;		
 }
+html{
+scroll-behavior: smooth;
+}
 
 body {
 	padding: 0;
