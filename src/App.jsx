@@ -32,7 +32,7 @@ function App() {
 						<CV />
 					</SiteContainer>
 					<SiteContainer>
-						<h2>Social Media</h2>
+						<h2 id="Social">Social Media</h2>
 						<Social />
 						<h2>Contact</h2>
 						<Contact />

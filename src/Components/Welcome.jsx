@@ -1,3 +1,9 @@
+import { motion } from 'framer-motion';
+
 export default function Welcome() {
-	return <h2>Welcome</h2>;
+	return (
+		<div>
+			<motion.h2>Welcome</motion.h2>
+		</div>
+	);
 }
