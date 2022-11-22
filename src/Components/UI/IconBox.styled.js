@@ -1,13 +1,15 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const IconBox = styled.div`
+export const IconBox = styled(motion.div)`
 	display: flex;
-	height: 4em;
-	width: 4em;
-	justify-items: center;
+	height: 5em;
+	width: 5em;
+	justify-content: center;
+	background-size: cover;
 	align-items: center;
+	border-radius: 50%;
 
-	padding: 1em;
 	border: solid 2px;
 	background-color: purple;
 `;

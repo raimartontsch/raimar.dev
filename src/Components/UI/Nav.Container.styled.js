@@ -8,7 +8,7 @@ export const NavContainer = styled(motion.div)`
 	justify-content: flex-start;
 
 	right: 0px;
-	top: 15vh;
+	top: 13vh;
 	height: 75vh;
 	width: 15vw;
 	min-width: 150px;

@@ -17,12 +17,13 @@ export default function Nav() {
 		showButton: {
 			x: 0,
 			y: 0,
-			transition: { delay: 0.7 },
+			transition: { duration: 0.3 },
 		},
 		hideButton: {
 			opacity: 0,
-			transition: { delay: 0.4 },
+			transition: { duration: 0.3 },
 		},
+		tapIt: { scale: 0.95 },
 	};
 	const navClose = {
 		hover: {
@@ -34,17 +35,14 @@ export default function Nav() {
 		openNav: {
 			x: [230, 0],
 			opacity: 1,
-			transition: { duration: 1, ease: 'easeIn' },
+			transition: { duration: 0.5, ease: 'easeIn' },
 		},
 		closeNav: {
 			x: [0, 230],
 			opacity: 0,
-			transition: { duration: 1, ease: 'easeOut' },
+			transition: { duration: 0.6, ease: 'easeOut' },
 		},
-		closeButton: {
-			x: -5,
-			y: -5,
-		},
+		tapIt: { scale: 0.95 },
 	};
 
 	const itemNav = {
@@ -76,9 +74,10 @@ export default function Nav() {
 				initial={false}
 				variants={navOpen}
 				whileHover="hover"
+				whileTap="tapIt"
 				animate={openNav ? 'showButton' : 'hideButton'}
 			>
-				<TheSVG variant="NavMenu" size="24px" />
+				<TheSVG variant="navMenu" size="2em" />
 			</NavButton>
 			<AnimatePresence>
 				<NavContainer
@@ -86,8 +85,13 @@ export default function Nav() {
 					initial="closeNav"
 					animate={!openNav ? 'openNav' : 'closeNav'}
 				>
-					<NavButton onClick={handleNav} variants={navClose} whileHover="hover">
-						<TheSVG variant="CloseNavMenu" size="24px" />
+					<NavButton
+						onClick={handleNav}
+						variants={navClose}
+						whileHover="hover"
+						whileTap="tapIt"
+					>
+						<TheSVG variant="closeNavMenu" size="2em" />
 					</NavButton>
 					<NavList>
 						<NavItem

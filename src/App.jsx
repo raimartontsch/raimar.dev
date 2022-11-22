@@ -38,6 +38,7 @@ function App() {
 						<Contact />
 					</SiteContainer>
 				</BodyContainer>
+				<footer>Impressum</footer>
 			</main>
 		</div>
 	);
