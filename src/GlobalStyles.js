@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
 }
 html{
 scroll-behavior: smooth;
+-webkit-scroll-behavior: smooth;
+-moz-scroll-behavior: smooth;
+-ms-scroll-behavior: smooth;
 }
 
 body {

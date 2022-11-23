@@ -12,6 +12,7 @@ export const NavContainer = styled(motion.div)`
 	height: 75vh;
 	width: 15vw;
 	min-width: 150px;
+	z-index: 1;
 
 	background: rgba(255, 255, 255, 0.2);
 	border-top-left-radius: 16px;

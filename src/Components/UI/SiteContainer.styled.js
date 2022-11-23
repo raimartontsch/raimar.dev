@@ -5,11 +5,8 @@ export const SiteContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	height: 100vh;
-	width: 80vw;
+	width: 100vw;
 	border-bottom: solid 2px;
 	border-color: silver;
-
-	@media screen and (max-width: 720px) {
-		width: 60vw;
-	}
+	overflow: hidden;
 `;
