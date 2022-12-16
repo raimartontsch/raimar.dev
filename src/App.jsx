@@ -3,6 +3,7 @@ import { BodyContainer } from './Components/UI/BodyContainer.styled';
 import GlobalStyle from './GlobalStyles';
 import AboutMe from './Components/AboutMe';
 import CV from './Components/CV';
+import CvTwo from './Components/CvTwo';
 import Projects from './Components/Projects';
 import Social from './Components/Social';
 import { SiteContainer } from './Components/UI/SiteContainer.styled';
@@ -27,10 +28,7 @@ function App() {
 						<h2 id="Projects">Projects</h2>
 						<Projects />
 					</SiteContainer>
-					<SiteContainer>
-						<h2>CV</h2>
-						<CV />
-					</SiteContainer>
+
 					<SiteContainer>
 						<h2 id="Social">Social Media</h2>
 						<Social />

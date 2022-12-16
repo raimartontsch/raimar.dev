@@ -10,10 +10,10 @@ import { TechListContainer } from './UI/TechListContainer.styled';
 export default function AboutMe() {
 	const { scrollYProgress } = useScroll();
 	const scaleLeft = useTransform(scrollYProgress, [0.07, 0.23], [0, 1]);
-	const xLeft = useTransform(scrollYProgress, [0.3, 0.4], [0, -1000]);
-	const opacityLeft = useTransform(scrollYProgress, [0.07, 0.23], [0, 1]);
+	const xLeft = useTransform(scrollYProgress, [0.4, 0.9], [0, -2000]);
+	const opacityLeft = useTransform(scrollYProgress, [0.07, 0.25], [0, 1]);
 	const scaleRight = useTransform(scrollYProgress, [0.17, 0.23], [0, 1]);
-	const xRight = useTransform(scrollYProgress, [0.375, 0.47], [0, 1200]);
+	const xRight = useTransform(scrollYProgress, [0.45, 0.9], [0, 2000]);
 	const opacityRight = useTransform(scrollYProgress, [0.1, 0.3], [0, 1]);
 
 	const TechLi = {
@@ -26,18 +26,18 @@ export default function AboutMe() {
 
 	return (
 		<Wrapper>
-			<AboutMeTextContainer style={{ scale: scaleLeft, opacity: opacityLeft, x: xLeft }}>
+			<AboutMeTextContainer
+				style={{
+					scale: scaleLeft,
+					opacity: opacityLeft,
+					x: xLeft,
+				}}
+			>
 				<Quote style={{ scale: scaleLeft, opacity: opacityLeft }}>
-					"I am a front-end web developer
-				</Quote>
-				<Quote style={{ scale: scaleLeft, opacity: opacityLeft }}>
-					and enjoy creating digital solutions for real life challenges.
-				</Quote>
-				<Quote style={{ scale: scaleLeft, opacity: opacityLeft }}>
-					To me coding is the perfect synergy of analytical thinking and creativity.
-				</Quote>
-				<Quote style={{ scale: scaleLeft, opacity: opacityLeft }}>
-					I am facing technical challenges with curiosity and a lot of team spirit."
+					"I am a front-end web developer and enjoy creating digital solutions for real
+					life challenges. To me coding is the perfect synergy of analytical thinking and
+					creativity. I am facing technical challenges with curiosity and a lot of team
+					spirit."
 				</Quote>
 			</AboutMeTextContainer>
 

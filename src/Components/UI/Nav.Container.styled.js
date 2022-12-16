@@ -6,12 +6,14 @@ export const NavContainer = styled(motion.div)`
 	flex-direction: row;
 	position: fixed;
 	justify-content: flex-start;
+	z-index: 1;
 
 	right: 0px;
 	top: 13vh;
 	height: 75vh;
 	width: 15vw;
 	min-width: 150px;
+	min-height: 400px;
 	z-index: 1;
 
 	background: rgba(255, 255, 255, 0.2);

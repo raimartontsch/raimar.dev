@@ -1,7 +1,7 @@
 import { NavContainer } from './UI/Nav.Container.styled';
 import { NavButton } from './UI/NavButton.styled';
-import { AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { AnimatePresence, useAnimationControls, useScroll } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { NavList } from './UI/NavList.styled';
 import { NavItem } from './UI/NavItem.styled';
 import TheSVG from './SVGs';
@@ -25,6 +25,7 @@ export default function Nav() {
 		},
 		tapIt: { scale: 0.95 },
 	};
+
 	const navClose = {
 		hover: {
 			scale: 1.2,

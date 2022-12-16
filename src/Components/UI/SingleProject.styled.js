@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const SingleProject = styled.li`
-	width: 40vw;
+	width: 40%;
 
-	height: 15vh;
+	height: 35%;
 	border: solid 1px;
-	border-color: pink;
+	border-color: blue;
 	cursor: pointer;
 	list-style: none;
+	background-color: pink;
 
-	@media screen and (min-width: 720px) {
-		max-width: 30vw;
+	@media screen and (max-width: 720px) {
+		max-width: 25%;
 	}
 `;

@@ -8,4 +8,5 @@ export const NavButton = styled(motion.button)`
 	align-items: center;
 	position: fixed;
 	cursor: pointer;
+	z-index: 1;
 `;
