@@ -1,8 +1,12 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const NavButton = styled.button`
+export const NavButton = styled(motion.button)`
+	top: 50vh;
+	right: 2vw;
+	justify-content: center;
+	align-items: center;
 	position: fixed;
-	right: 0.5em;
-	top: 45vh;
 	cursor: pointer;
+	z-index: 1;
 `;

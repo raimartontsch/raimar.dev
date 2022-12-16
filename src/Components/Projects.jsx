@@ -10,8 +10,8 @@ export default function Projects() {
 	return (
 		<ProjectsContainer>
 			<ProjectList>
-				<a onClick={() => openNewTab('https://c-u.vercel.app/')}>
-					<SingleProject>BILD1</SingleProject>
+				<a /*</ProjectList>onClick={() => openNewTab('https://c-u.vercel.app/')}*/>
+					<SingleProject>c.u. - Let's keep in touch</SingleProject>
 				</a>
 			</ProjectList>
 		</ProjectsContainer>

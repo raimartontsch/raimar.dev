@@ -1,15 +1,10 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const TextContainer = styled.div`
-	height: fit-content;
-	display: flex;
-	flex-direction: row;
-	justify-items: center;
-	align-content: center;
-	background-color: darkgrey;
+export const TextContainer = styled(motion.div)`
+	height: 35vh;
 	width: 70vw;
-
-	@media screen and (max-width: 540px) {
-		flex-direction: column;
-	}
+	display: flex;
+	justify-content: space-between;
+	background-color: darkgrey;
 `;

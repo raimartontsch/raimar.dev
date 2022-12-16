@@ -1,25 +1,29 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const SlideInNav = keyframes`
-	0% {
-		right: 10px;
-	}
-`;
-
-export const NavContainer = styled.div`
+export const NavContainer = styled(motion.div)`
 	display: flex;
+	flex-direction: row;
 	position: fixed;
-	background-color: blue;
-	justify-content: space-around;
-
-	animation: SlideInNav;
+	justify-content: flex-start;
+	z-index: 1;
 
 	right: 0px;
-	top: 10vh;
+	top: 13vh;
 	height: 75vh;
 	width: 15vw;
+	min-width: 150px;
+	min-height: 400px;
+	z-index: 1;
 
-	@media screen and (max-width: 720px) {
+	background: rgba(255, 255, 255, 0.2);
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+
+	@media (max-width: 720px) {
 		width: 35vw;
 	}
 `;
